@@ -6,14 +6,5 @@
 		<link>http://hitchpy.github.io</link>
 		<atom:link href="http://hitchpy.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
-			<item>
-				<title>Vivamus porttitor porta tortor</title>
-				<description>&lt;p&gt;Vivamus porttitor porta tortor at ullamcorper. Proin vel nisi magna. Vivamus vel velit laoreet, malesuada nunc nec, pulvinar velit. Vivamus sollicitudin ex quam, sit amet aliquet velit euismod in. Etiam rutrum augue orci, sed euismod risus vehicula eu. Proin quis velit mattis, sodales erat vitae, condimentum nulla. Vestibulum vitae imperdiet ligula. Etiam venenatis ultrices varius.&lt;/p&gt;
-</description>
-				<pubDate>Fri, 22 May 2015 16:25:06 -0700</pubDate>
-				<link>http://hitchpy.github.io/2015/05/Vivamus-porttitor-porta-tortor</link>
-				<guid isPermaLink="true">http://hitchpy.github.io/2015/05/Vivamus-porttitor-porta-tortor</guid>
-			</item>
-		
 	</channel>
 </rss>
