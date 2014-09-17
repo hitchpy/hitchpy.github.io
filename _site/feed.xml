@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>My blog</title>
-		<description>A jekyll theme</description>
+		<title>Yu's Website</title>
+		<description>Talk data to me.</description>
 		<link>http://hitchpy.github.io</link>
 		<atom:link href="http://hitchpy.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Vivamus porttitor porta tortor</title>
+				<description>&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;#39;s face it, we all need to communicate our ideas with others. I started this page hoping that some of my thoughts/codes can reach out to more people and I can get more feedback from others.&lt;/p&gt;
+
+&lt;p&gt;To be a data scientist, you need to know a bunch of stuffs. And it takes time to be good at something. So the focus of the things that I do will mostly be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Data cleaning&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Application of Statistical/ Machine learning algorithms &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Details of algorithms/data structure implementations&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Some visualizations/result communications&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since I am trained as a statistician, &lt;strong&gt;R&lt;/strong&gt; will be my primary language, but I speak &lt;strong&gt;Python&lt;/strong&gt; and &lt;strong&gt;C++&lt;/strong&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+				<pubDate>Wed, 17 Sep 2014 00:00:00 -0700</pubDate>
+				<link>http://hitchpy.github.io/2014/09/First-post!</link>
+				<guid isPermaLink="true">http://hitchpy.github.io/2014/09/First-post!</guid>
+			</item>
 		
 	</channel>
 </rss>
