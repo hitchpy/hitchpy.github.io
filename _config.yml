@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: My Github
-description: Yu's site
+name: Yu's Website
+description: All about the data
 
 # url is currently only used only for the RSS feed in feed.xml
 url: http://hitchpy.github.io
