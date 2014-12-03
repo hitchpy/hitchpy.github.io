@@ -1,6 +1,8 @@
 ---
-title: "test"
+layout: post
+title: "test of converting Rmarkdown with plots"
 output: html_document
+comments: true
 ---
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.

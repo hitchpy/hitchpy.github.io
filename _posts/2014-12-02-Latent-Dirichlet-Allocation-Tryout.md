@@ -1,4 +1,8 @@
-Final project for STAT280, MCMC. Fall 2014 UC Davis.
------------
+---
+layout: post
+title: "Topic Modeling with Latent Dirichlet Allocation"
+date: 2014-12-02
+comments: true
+---
 
-# What is this course about??
+# Intro
