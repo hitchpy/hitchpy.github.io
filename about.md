@@ -6,6 +6,8 @@ layout: default
 Biography
 ======
 
-My name is Yu Pei, currently a master student majored in biostatistics at UC-Davis. I am originally from GuangDong, China. Graduated from Sun Yat-Sen University with double majors in Biochemistry and Statistics. 
+My name is Yu Pei, from GuangDong, China. Recently graduated from UC Davis with master degree in Biostatistics. Currently I am working as research assistant for a USDA project, focused on evaluating the viability and sustainability of bioenergy as source for renewable fuels. My role mainly involved data processing, tree growth simulation, error analysis and manuscript writing. 
 
-Here is my [Resume](https://s3-us-west-1.amazonaws.com/yu.public/Yu_Pei_resume.pdf)
+In my free time, I am active in Kaggle platform for various interesting data projects. 
+
+My latest resume can be found here: [Resume]({{site.baseurl}}/resume/Yu_Resume_July.pdf)
