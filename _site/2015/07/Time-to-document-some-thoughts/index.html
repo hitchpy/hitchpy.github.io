@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yu's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Yu's Website</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/archive.html">Archive</a></li>
+                    <li class="active"><a href="/about.html">About</a></li>
+                    <li class="active"><a href="/feed.xml">RSS</a></li>
+                    
+                      <li class="active"><a href="https://github.com/hitchpy">Github</a></li>
+                    
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <div class="sidebar well">
+Talk data to me.
+</div>
+
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        
+          <li><a href="/2015/07/Time-to-document-some-thoughts">Time to document some thoughts</a></li>
+        
+          <li><a href="/2015/07/Some-thoughts-on-my-Kaggle-experiences">Some thoughts on my Kaggle experiences</a></li>
+        
+          <li><a href="/2015/03/Experiences-with-data-scientist-interviews">Experiences with data scientist interviews</a></li>
+        
+          <li><a href="/2014/12/Latent-Dirichlet-Allocation-Tryout">Topic Modeling with Latent Dirichlet Allocation(LDA)</a></li>
+        
+          <li><a href="/2014/11/Test-rmarkdown">test of converting Rmarkdown with plots</a></li>
+        
+    </ul>
+</div>
+
+<div class="sidebar well">
+<h1>Links</h1>
+<ul>
+  <li><a href="https://www.linkedin.com/in/yupei">Linkedin</a></li>
+  <li><a href="https://www.kaggle.com/hitchpy">Kaggle</a></li>
+  <li><a href="https://www.facebook.com/yu.pei.71">Facebook</a></li>
+  <li><a href="https://twitter.com/hitchpy">Twitter</a></li>
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-9">
+          <div class="article">
+            <div class="well">
+                <h1><a href="/2015/07/Time-to-document-some-thoughts">Jul 28, 2015 - Time to document some thoughts</a></h1>
+            
+                <p class="author"><a href="#disqus_thread">Comments</a></p>
+            
+            <div class="post-content">
+            <h3 id="introduction">Introduction</h3>
+
+<p>Recently I have spend some time working on two Kaggle competitions. One is a image classification problem <a href="https://www.kaggle.com/c/diabetic-retinopathy-detection">Diabetic Retinopathy</a>, the other one is context Ad click through rate(CTR) prediction <a href="https://www.kaggle.com/c/avito-context-ad-clicks">Avito Context Ad Clicks</a>. </p>
+
+<p>Both are very interesting topics, but I didn&#39;t have enough time to explore the problem more deeply and the models are definitely suboptimal. Still, I have learned a few things from them. </p>
+
+<h3 id="image-classification-and-convolution-neural-network(cnn)">Image classification and convolution neural network(CNN)</h3>
+
+<p>Early this year, Stanford offered a class regarding CNN for visual recognition and they kindly shared all the wonderful notes and homeworks <a href="http://cs231n.stanford.edu/index.html">online</a>. I have followed the class and worked on the problems. And this Diabetic problem is the perfect opportunity to apply those knowledges and tried out Theano(in this case, the wonderful <a href="http://keras.io/">Keras</a> wrapper package). Since I have zero prior image processing experience, I mostly just want to get a feel of CNN. I read through a few of the top competitors&#39; solution and code, those are some serious engineering efforts! Just some low hanging fruits that might help improving my current model:</p>
+
+<ul>
+<li><p>further image preprocessing will be very helpful. including color adjustments, and normalization with population mean and standard deviation. And it seems like class balancing is not that important, some other kind of augmentation schemes will be useful(flipping etc.)</p></li>
+<li><p>Customizing the loss function will help. Initially I use cross-entropy for multi-class classification loss. But the model just wasn&#39;t learning anything(I was using the original pictures with huge black frames!). As pointed out by others, the classes are ordered, so a metric that can reflect this would be more appropriate. And a soft version of Kappa is also possibly better. I used MSE coupled with ranked score and cutoff, which seems to be a reasonable method too.</p></li>
+<li><p>This is indeed a huge project and I really admire those people that dedicated few months time to tackle this problem. I tried one VGG structure in the last two weeks and that was all I ever tried! Experimenting with nonlinearity and stride size, model depth certainly will yield meaning results. But I didn&#39;t do anything! Not even did any model validation! </p></li>
+</ul>
+
+<h3 id="online-learning-and-ctr-estimation">Online learning and CTR estimation</h3>
+
+<p>For many fellow Kaggler, this type of problem is nothing new. There were a few similar competitions before this already, and the methods used for this kind of problem is very standard too(Logistic regression, FFM etc). But there are always new twist to the problem. For this competition:</p>
+
+<ul>
+<li><p>The data is fairly large, so training and model iteration will be more difficult.</p></li>
+<li><p>There are different kind of Ads, and &quot;Ad&quot; is like the content of the webpage, not like what is usually showed on a sidebar. The data is very rich and you can generate a lot of useful features from it. With visits history, you can do personalization if you are really serious. But I guess it must be very time consuming and will not fit into the online learning framework, so even the top rankers are not doing it. Although with the search query and titles and parameters of the product, some people did NLP analysis and yield some useful feature.</p></li>
+<li><p>Although FTRL is mostly logistic regression under the hook, they never teach you to use features sets of millions(with no regularization) in statistic class. Using AdID and IPID as features seems too raw, but it did yield better result.</p></li>
+<li><p>A &quot;so obvious&quot; after they told you feature is to combine all the results from the same research(their position, type, etc) as a tuple, and treated it as categorical features. It makes intuitive sense, since whether a user will click on a particular ad will certainly depends on the whole search result, not just one single ad.</p></li>
+<li><p>One last question I have is really how &quot;good&quot; first place&#39;s model is, what does 0.0402 logloss means in this instant, and how big a difference it actually is between 0.045 and 0.040. For a sample of 7,800,000 test points, 0.005 means a total of 39,000 total difference, and that is no a small number. </p></li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>There are two ways you can approach Kaggle competitions. You can, like me, try something new, a type of problem you haven&#39;t work on, and you test some basic ideas. Or you can focus on one or two problems, and dedicate your energy to cracking that problem. I have tried the first style quite a bit, I might need to try the second one now. Just keep at it!</p>
+
+            </div>
+            
+            <div id="disqus_thread">
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+            </div>
+          </div>
+          <div class="pagination">
+              
+              
+                <a class="btn btn-default" href="/2015/07/Some-thoughts-on-my-Kaggle-experiences" class="previous">Older Post</a>
+              
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+    var disqus_shortname = 'hitchpy';
+
+   (function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2015 Yu's Website. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
+            under
+            <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
+        </div>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+    var disqus_shortname = 'hitchpy';
+
+   (function () {
+     var s = document.createElement('script'); s.async = true;
+     s.type = 'text/javascript';
+     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+   }());
+ </script>
+
+
+
+
+
+</body>
+</html>
+
