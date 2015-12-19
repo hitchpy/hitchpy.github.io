@@ -10,4 +10,4 @@ My name is Yu Pei, from GuangDong, China. Recently graduated from UC Davis with 
 
 In my free time, I am active in Kaggle platform for various interesting data projects. 
 
-My latest resume can be found here: [Resume]({{site.baseurl}}/resume/Yu_Resume_July.pdf)
+My latest resume can be found here: [Resume]({{site.baseurl}}/resume/Yu_Resume_Aug2015.pdf)
