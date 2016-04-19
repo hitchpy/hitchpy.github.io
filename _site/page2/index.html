@@ -53,15 +53,15 @@ Talk data to me.
     <h1>Recent Posts</h1>
     <ul>
         
+          <li><a href="/2016/04/Creative-writing-and-scientific-paper-writing">Creative Writing and Scientific Paper Writing</a></li>
+        
+          <li><a href="/2015/12/New-path">New path</a></li>
+        
           <li><a href="/2015/07/Time-to-document-some-thoughts">Time to document some thoughts</a></li>
         
           <li><a href="/2015/07/Some-thoughts-on-my-Kaggle-experiences">Some thoughts on my Kaggle experiences</a></li>
         
           <li><a href="/2015/03/Experiences-with-data-scientist-interviews">Experiences with data scientist interviews</a></li>
-        
-          <li><a href="/2014/12/Latent-Dirichlet-Allocation-Tryout">Topic Modeling with Latent Dirichlet Allocation(LDA)</a></li>
-        
-          <li><a href="/2014/11/Test-rmarkdown">test of converting Rmarkdown with plots</a></li>
         
     </ul>
 </div>
@@ -80,6 +80,83 @@ Talk data to me.
         </div>
         <div class="col-md-9">
             
+<div class="article">
+    <div class="well">
+        <h1><a href="/2015/07/Some-thoughts-on-my-Kaggle-experiences">Jul 5, 2015 - Some thoughts on my Kaggle experiences</a></h1>
+        
+          <p class="author"><a href="/2015/07/Some-thoughts-on-my-Kaggle-experiences/#disqus_thread">Comments</a></p>
+        
+        <div class="content">
+            <p>It really has been a while since my last blog post! Anyway, since I participated in the <a href="https://www.kaggle.com/c/inria-bci-challenge">BCI Kaggle competition</a> with several my classmates, I entered a few more(<a href="https://www.kaggle.com/c/how-much-did-it-rain">Rain</a>, <a href="https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot">Robot Detaction</a>, <a href="https://www.kaggle.com/c/predict-west-nile-virus">Virus Prediction</a> and <a href="https://www.kaggle.com/c/crowdflower-search-relevance">CrowdFlower Search results relevance</a>). Trust me, it is not easy at the beginning. Not knowing what to do, and the vast amount of time needed for each competition probably will put a lot of people off. Here, I will share my own experiences so far from participating in all these competitions. It will be about the general thought process, how to iterate over different ideas and what I have learned from them. I am by no means a top competitor, but I want to share it anyway. And maybe some years from now, it will be funny to look back!</p>
+
+<p>First of all, people would say that these are competitions, how realistic or similar to real world modeling? It it true that there certainly will be some differences, but many industry products start out with prototypes and this might be similar to that. And second, some competition organizers genuinely have end product in mind and intent to make the competition more &quot;realistic&quot;. Of course this itself is a huge topic and I would go into detail here, but I strongly suggest <a href="http://www.thetalkingmachines.com/blog/2015/6/18/working-with-data-and-machine-learning-in-advertizing">this podcast episode</a> and <a href="https://sites.google.com/site/claudiaperlich/home">The speaker&#39;s website</a>. </p>
+
+<p>So you are looking at the description of one competition, it seems quite interesting, a classification or regression problem. You decided to download the data and have a look, and see what other people are discussing in the forum. You might have some ideas about possible ways to tackle this problem, or there are shared starter code to get you started. The value of experiences is when you see a problem, you can probably &quot;know&quot; what methods might work, what kinds of features might be important for prediction. This is the most excruciating or most exhilarating part. The frustration of after exploring the data 1000 ways, trying all the methods you ever know, and things still doesn&#39;t work. Or the joy of finding the important features and see a huge bump in your score. They are all valuable lessons. The wonderful people in Kaggle usually will share their solutions after the competition is over. And you will know why you didn&#39;t do well and improve next time in a similar situation. It is all good!</p>
+
+<p>In terms of iteration of ideas, that&#39;s where good engineering practices and master of tools come in. Knowing your tools(R packages or scikit-learn functions) well means when you have an idea, you can quickly put it to test. And good structuring or your data processing code, cross validation etc means you can swipe in and out of modules/methods quickly. And everything will be smooth..But again, this will require a lot of practice and a good habit. Usually there are a bunch of engineers in each competition, and you can learn a lot from them.</p>
+
+<p>Finally what I have learned from the competitions I participated? Getting Generalized linear model(GLM) to actions, working on text data, and doing various exploratory to get better features! And as classified by someone else, there are structured dominated problems and noise dominated problems(BCI with EEG data definitely is in this category). Knowing what to do(finding tiny signals or finding complicated structure) in each cases(avoid overfitting noise or use more complicated algorithm to capture the underlying functions) will be vital. </p>
+
+<p>At the moment I am still not very familiar with the strength and weakness of some common algorithms, don&#39;t know how to handle many types of data, don&#39;t know efficient way to tackle the problem if data gets too big, don&#39;t have good engineering practices. </p>
+
+<p>So, back to the modeling!</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class="well">
+        <h1><a href="/2015/03/Experiences-with-data-scientist-interviews">Mar 4, 2015 - Experiences with data scientist interviews</a></h1>
+        
+          <p class="author"><a href="/2015/03/Experiences-with-data-scientist-interviews/#disqus_thread">Comments</a></p>
+        
+        <div class="content">
+            <p>I have been looking for jobs recently because I am about to graduate soon. 
+At the beginning of February, I have two interviews for the position of (junior) data scientist. Those are my first ever interviews. Although I didn&#39;t get offer from either of them, it was a great experience. I would like to share some of the experiences here, and some thoughts about the process. Since there were non-disclosure agreements, I will not give out detail but only the general ideas. Hopefully someone might find this useful for their own future preparation.</p>
+
+<p>It all began in the Engineering and Science career fair here at UC Davis around mid-Jan(quite awhile back already!). There are many tech companies but not so many have opening for data scientist position. I handed out about a dozen resumes and talked to the representatives about what I have done and why I am competent for the job. Naturally, they are all very polite and just told me to go back and wait for notice. Workday.inc provided a short interview opportunities that afternoon, and finally I was invited to have an onsite interview. The second interview was from Engage3, a startup here in Davis, focus on retailing. They called me a few days after the career fair. </p>
+
+<h3 id="general-process">General process</h3>
+
+<ul>
+<li><p>Engage3</p>
+
+<ul>
+<li>Called me, scheduled an hour informal interview with one of the senior member of the data scientist team.</li>
+<li>Talked with him in a coffee house, about what they are doing, what visions they have about their product, and what kinds of skills they would expect from their candidates. I had quite a nice conversation. Two days later they invited me for another two hour in-depth interview.</li>
+<li>The two hour interview includes two components, one is technical with two of the team members, the other one is behavioral. More details later.</li>
+</ul></li>
+<li><p>Workday</p>
+
+<ul>
+<li>Mature company focus on enterprise software, especially in human management and financial management etc. Beautiful office in downtown SF. They are rapidly expanding their data science team, and they expect it will play an important role in their company’s decisions.</li>
+<li>During that short half hour on-campus interview, one of the senior member in the team interviewed me. It covered some basic statistical concepts, at the undergraduate level, and one SQL question, one data manipulation question. All quite standard. I didn&#39;t ace it but I think I did ok. HR sent out an email for onsite a few days later.</li>
+</ul></li>
+</ul>
+
+<h3 id="components-of-the-main-interview">Components of the main interview</h3>
+
+<p>The term data scientist is widely used only in recently years and the role is not very well defined. Every companies have their own expectations, some more research oriented, some more software engineering related, some more like consulting etc.</p>
+
+<h4 id="engage3">Engage3</h4>
+
+<p>They were very straightforward and had clear idea about what their candidate should be able to do. They expect you know your conditional probability well(do it like a bayesian!), they also expect that you have strong hands on skill. I was given a piece of Python script to debug, since now I mostly use R for day to day analysis, it took me a while to spot the bug. No the usual kind of algorithm questions for software engineer position and that is nice. Fundamentally I think it is important that data scientist know those concepts but in it&#39;s core, it is about analytics, the ability to explore data and yield insight from them. </p>
+
+<p>On the behavioral site, they focus more on your personality, whether you can endure hardship(you can imagine the importance of the trait for a startup company). In hindsight, I should be more well prepared for this interview. Review the stat/probability concepts, and brush up my Python skill since most people outside stat would be more comfortable with Python/Java. They told me they will make the final decision next week and I got the rejection right on time.</p>
+
+<h4 id="workday">Workday</h4>
+
+<p>Six round of interviews, the people there are all very talented. PhD from Physics/Stat/machine learning, experienced software engineers etc. First interview was about basic stat concepts again! <strong>Condition distribution</strong>, can&#39;t stress that point more. Two of the them were coding style interviews. Need to write out the solution in a whiteboard, and yes, they would prefer you do it with Python/Java. The questions weren&#39;t hard and I wrote out the solutions with Python with some hints. One of the interview was focused on machine learning algorithms, how they works, how to train them, their pros and cons. In conclusion, to do well in a data scientist interview, you need to know your ML toolbox well! And finally the head of the team talked with me for a moment, about what they are doing and their visions. </p>
+
+<p>After that I also briefly interviewed with Cablevision and some other companies as well but still don&#39;t have any offer yet. More hands on experiences are needed! </p>
+
+<p>Next post I will talk about the Kaggle competition [BCI Challenge]{<a href="http://www.kaggle.com/c/inria-bci-challenge">http://www.kaggle.com/c/inria-bci-challenge</a>}. Which me and several my classmates joined and finally got 79 out of 270 teams.</p>
+
+        </div>
+    </div>
+</div>
+
 <div class="article">
     <div class="well">
         <h1><a href="/2014/12/Latent-Dirichlet-Allocation-Tryout">Dec 2, 2014 - Topic Modeling with Latent Dirichlet Allocation(LDA)</a></h1>
@@ -101,63 +178,6 @@ Talk data to me.
     </div>
 </div>
 
-<div class="article">
-    <div class="well">
-        <h1><a href="/2014/11/Test-rmarkdown">Nov 1, 2014 - test of converting Rmarkdown with plots</a></h1>
-        
-          <p class="author"><a href="/2014/11/Test-rmarkdown/#disqus_thread">Comments</a></p>
-        
-        <div class="content">
-            <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.</p>
-
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">summary</span><span class="p">(</span>cars<span class="p">)</span>
-</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">##      speed           dist    
-##  Min.   : 4.0   Min.   :  2  
-##  1st Qu.:12.0   1st Qu.: 26  
-##  Median :15.0   Median : 36  
-##  Mean   :15.4   Mean   : 43  
-##  3rd Qu.:19.0   3rd Qu.: 56  
-##  Max.   :25.0   Max.   :120
-</code></pre></div>
-<p>You can also embed plots, for example:</p>
-
-<p><img src="/figure/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
-
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
-
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="well">
-        <h1><a href="/2014/09/First-post!">Sep 17, 2014 - First Post!</a></h1>
-        
-          <p class="author"><a href="/2014/09/First-post!/#disqus_thread">Comments</a></p>
-        
-        <div class="content">
-            <h1 id="introduction">Introduction</h1>
-
-<p>Let&#39;s face it, we all need to communicate our ideas with others. I started this page hoping that some of my thoughts/codes can reach out to more people and I can get more feedback from others.</p>
-
-<p>To be a data scientist, you need to know a bunch of stuffs. And it takes time to be good at something. So the focus of the things that I do will mostly be:</p>
-
-<ul>
-<li><p>Data cleaning</p></li>
-<li><p>Application of Statistical/ Machine learning algorithms </p></li>
-<li><p>Details of algorithms/data structure implementations</p></li>
-<li><p>Some visualizations/result communications</p></li>
-</ul>
-
-<p>Since I am trained as a statistician, <strong>R</strong> will be my primary language, but I speak <strong>Python</strong> and <strong>C++</strong> as well.</p>
-
-<p>Enjoy!</p>
-
-        </div>
-    </div>
-</div>
-
 
 <div class="pagination">
   
@@ -165,7 +185,9 @@ Talk data to me.
         <a class="btn btn-default" href="/index.html" class="previous">Newer</a>
       
   
-  <span class="page_number ">Page: 2 of 2</span>
+  <span class="page_number ">Page: 2 of 3</span>
+  
+    <a class="btn btn-default" href="/page3" class="next">Older</a>
   
 </div>
 
@@ -176,7 +198,7 @@ Talk data to me.
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12 footer navbar-inverse navbar-fixed-bottom">
-            <p class="copyright">&copy;2015 Yu's Website. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
+            <p class="copyright">&copy;2016 Yu's Website. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a>
             under
             <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
         </div>

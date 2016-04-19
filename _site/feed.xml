@@ -7,10 +7,48 @@
 		<atom:link href="http://hitchpy.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Creative Writing and Scientific Paper Writing</title>
+				<description>&lt;p&gt;Many people will agree with me that writing scientific manuscript is easier than creative writing. For papers, each section is clearly defined. You layout the background, list your contributions first, then &lt;em&gt;just&lt;/em&gt; describe what you have done and how you did it. Related works will take some time, but you know what they have done, how their work differ from yours, so no big issues here.&lt;/p&gt;
+
+&lt;p&gt;Is it good that you can write your paper in a very engaging way? Of course! Here I would highly recommend every aspiring scientists to watch this fantastic short presentation by Prof. Simon Peyton Jones about writing &lt;strong&gt;great&lt;/strong&gt; research paper &lt;a href=&quot;https://www.youtube.com/watch?v=g3dkRsTqdDA&quot;&gt;Link&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Turns out, much like novels, a research paper is telling a story too. You have already done a lot of good work, made some great discoveries, now you want to attract your readers with your convincing arguments and engaging descriptions. And that&amp;#39;s where creative writing comes in. It trains you to emphasize the main story lines, create the necessary details while gloss over the unimportant parts. &lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s exactly what I have been doing lately, training myself to be a better writing by reading various novels. &lt;/p&gt;
+
+&lt;p&gt;Some people might say: &amp;quot;No, Yu, this is just your way to justify reading that much novels!&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;But I will reason with them: &amp;quot;Of course not, this blog post is a proof that my writing is definitely getting better.&amp;quot;&lt;/p&gt;
+</description>
+				<pubDate>Mon, 18 Apr 2016 00:00:00 -0400</pubDate>
+				<link>http://hitchpy.github.io/2016/04/Creative-writing-and-scientific-paper-writing</link>
+				<guid isPermaLink="true">http://hitchpy.github.io/2016/04/Creative-writing-and-scientific-paper-writing</guid>
+			</item>
+		
+			<item>
+				<title>New path</title>
+				<description>&lt;p&gt;Year 2015 is coming to an end. Now would be a good time to summarize what I have been doing recently, and talk a little bit more about what happens next(Spoiler, I am moving to Tennessee!).&lt;/p&gt;
+
+&lt;p&gt;Around August, I was in a state full of uncertainties. Projects on Kaggle are interesting but they are side projects - something to explore over the weekends when you have a &lt;strong&gt;job&lt;/strong&gt;. There were a few things going on then: I decided to stay in the bioenergy project only to the end of this year; find data analyst/scientist jobs and go into industry; a PhD opportunity in high performance computing in University of Tennessee, Knoxville. &lt;/p&gt;
+
+&lt;p&gt;Finding job is a painful and time-consuming process, but if you set your mind to it, there are positions available. But even with a master degree, the job most likely will be basic data processing etc. On the other hand, the PhD program will be in a prestige research group, and there are large projects with important engineering and science questions to work on. I talked with several my friends and most of them have doubts about time investment in PhD, and location of the school(too &amp;quot;countryside&amp;quot;). Those are all valid concerns, but after some serious thoughts, I believe this is what I want to do and a choice I won&amp;#39;t regret. &lt;/p&gt;
+
+&lt;p&gt;With those cleared out of my mind, I focused on tying up everything here in the project and that is what I have been doing for the past few months. I need to write manuscript and publish the work we have done. Manuscript writing is something you need to practice to get good at, and I am definitely feeling the initial pain. Every procedure, analysis must be checked, everything need to be documented and well organized, and most importantly, I need to be patient. It is a long process: articulate the objective, perform necessary experiments to test hypothesis, interpret the result, write out the draft, find some errors, REPEAT... Finally we have our first draft ready to submit(yay!), let&amp;#39;s wait and see what will happen next.&lt;/p&gt;
+
+&lt;p&gt;With enough said about the past, let&amp;#39;s set some goals for 2016. My mentor has high hopes and expectations for me, and I do not plan to let him down. The transition from mostly writing scripts to analyze data to build efficient infrastructure for computation won&amp;#39;t be easy, fortunately, there will be many people in the new place to help(yes please!). My goal will be stay focused, and learn the things I need to accomplish the work.&lt;/p&gt;
+
+&lt;p&gt;New path lies ahead, and I ready for it.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 18 Dec 2015 00:00:00 -0500</pubDate>
+				<link>http://hitchpy.github.io/2015/12/New-path</link>
+				<guid isPermaLink="true">http://hitchpy.github.io/2015/12/New-path</guid>
+			</item>
+		
+			<item>
 				<title>Time to document some thoughts</title>
 				<description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
-&lt;p&gt;Recently I have spend some time working on two Kaggle competitions. One is a image classification problem &lt;a href=&quot;https://www.kaggle.com/c/diabetic-retinopathy-detection&quot;&gt;Diabetic Retinopathy&lt;/a&gt;, the other one is context Ad click through rate(CTR) prediction &lt;a href=&quot;https://www.kaggle.com/c/avito-context-ad-clicks&quot;&gt;Avito Context Ad Clicks&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Recently I have spend some time working on two Kaggle competitions. One is a image classification problem &lt;a href=&quot;https://www.kaggle.com/c/diabetic-retinopathy-detection&quot;&gt;Diabetic Retinopathy&lt;/a&gt;, the other one is context Ad click through rate(CTR) prediction &lt;a href=&quot;https://www.kaggle.com/c/avito-context-ad-clicks&quot;&gt;Avito Context Ad Clicks&lt;/a&gt;. You can find my solutions &lt;a href=&quot;https://github.com/hitchpy/Kaggle-Diabetic-Retinopathy-Detection&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://github.com/hitchpy/Kaggle-Avito-Context-Ad&quot;&gt;here&lt;/a&gt; &lt;/p&gt;
 
 &lt;p&gt;Both are very interesting topics, but I didn&amp;#39;t have enough time to explore the problem more deeply and the models are definitely suboptimal. Still, I have learned a few things from them. &lt;/p&gt;
 
@@ -40,7 +78,7 @@
 
 &lt;p&gt;There are two ways you can approach Kaggle competitions. You can, like me, try something new, a type of problem you haven&amp;#39;t work on, and you test some basic ideas. Or you can focus on one or two problems, and dedicate your energy to cracking that problem. I have tried the first style quite a bit, I might need to try the second one now. Just keep at it!&lt;/p&gt;
 </description>
-				<pubDate>Tue, 28 Jul 2015 00:00:00 -0700</pubDate>
+				<pubDate>Tue, 28 Jul 2015 00:00:00 -0400</pubDate>
 				<link>http://hitchpy.github.io/2015/07/Time-to-document-some-thoughts</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2015/07/Time-to-document-some-thoughts</guid>
 			</item>
@@ -61,7 +99,7 @@
 
 &lt;p&gt;So, back to the modeling!&lt;/p&gt;
 </description>
-				<pubDate>Sun, 05 Jul 2015 00:00:00 -0700</pubDate>
+				<pubDate>Sun, 05 Jul 2015 00:00:00 -0400</pubDate>
 				<link>http://hitchpy.github.io/2015/07/Some-thoughts-on-my-Kaggle-experiences</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2015/07/Some-thoughts-on-my-Kaggle-experiences</guid>
 			</item>
@@ -109,7 +147,7 @@ At the beginning of February, I have two interviews for the position of (junior)
 
 &lt;p&gt;Next post I will talk about the Kaggle competition [BCI Challenge]{&lt;a href=&quot;http://www.kaggle.com/c/inria-bci-challenge&quot;&gt;http://www.kaggle.com/c/inria-bci-challenge&lt;/a&gt;}. Which me and several my classmates joined and finally got 79 out of 270 teams.&lt;/p&gt;
 </description>
-				<pubDate>Wed, 04 Mar 2015 00:00:00 -0800</pubDate>
+				<pubDate>Wed, 04 Mar 2015 00:00:00 -0500</pubDate>
 				<link>http://hitchpy.github.io/2015/03/Experiences-with-data-scientist-interviews</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2015/03/Experiences-with-data-scientist-interviews</guid>
 			</item>
@@ -126,7 +164,7 @@ At the beginning of February, I have two interviews for the position of (junior)
 
 &lt;p&gt;&lt;a href=&quot;https://s3-us-west-1.amazonaws.com/yu.public/YuPei_stat280.pdf&quot;&gt;My presentation slides&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Tue, 02 Dec 2014 00:00:00 -0800</pubDate>
+				<pubDate>Tue, 02 Dec 2014 00:00:00 -0500</pubDate>
 				<link>http://hitchpy.github.io/2014/12/Latent-Dirichlet-Allocation-Tryout</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2014/12/Latent-Dirichlet-Allocation-Tryout</guid>
 			</item>
@@ -151,7 +189,7 @@ At the beginning of February, I have two interviews for the position of (junior)
 
 &lt;p&gt;Note that the &lt;code&gt;echo = FALSE&lt;/code&gt; parameter was added to the code chunk to prevent printing of the R code that generated the plot.&lt;/p&gt;
 </description>
-				<pubDate>Sat, 01 Nov 2014 00:00:00 -0700</pubDate>
+				<pubDate>Sat, 01 Nov 2014 00:00:00 -0400</pubDate>
 				<link>http://hitchpy.github.io/2014/11/Test-rmarkdown</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2014/11/Test-rmarkdown</guid>
 			</item>
@@ -175,7 +213,7 @@ At the beginning of February, I have two interviews for the position of (junior)
 
 &lt;p&gt;Enjoy!&lt;/p&gt;
 </description>
-				<pubDate>Wed, 17 Sep 2014 00:00:00 -0700</pubDate>
+				<pubDate>Wed, 17 Sep 2014 00:00:00 -0400</pubDate>
 				<link>http://hitchpy.github.io/2014/09/First-post!</link>
 				<guid isPermaLink="true">http://hitchpy.github.io/2014/09/First-post!</guid>
 			</item>
