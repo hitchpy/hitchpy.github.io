@@ -53,7 +53,7 @@ Talk data to me.
     <h1>Recent Posts</h1>
     <ul>
         
-          <li><a href="/2016/04/Creative-writing-and-scientific-paper-writing">Creative Writing and Scientific Paper Writing</a></li>
+          <li><a href="/2016/04/Creative-writing-and-research-paper-writing">Creative Writing and Research Paper Writing</a></li>
         
           <li><a href="/2015/12/New-path">New path</a></li>
         
@@ -89,17 +89,18 @@ Talk data to me.
         <div class="content">
             <p>It really has been a while since my last blog post! Anyway, since I participated in the <a href="https://www.kaggle.com/c/inria-bci-challenge">BCI Kaggle competition</a> with several my classmates, I entered a few more(<a href="https://www.kaggle.com/c/how-much-did-it-rain">Rain</a>, <a href="https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot">Robot Detaction</a>, <a href="https://www.kaggle.com/c/predict-west-nile-virus">Virus Prediction</a> and <a href="https://www.kaggle.com/c/crowdflower-search-relevance">CrowdFlower Search results relevance</a>). Trust me, it is not easy at the beginning. Not knowing what to do, and the vast amount of time needed for each competition probably will put a lot of people off. Here, I will share my own experiences so far from participating in all these competitions. It will be about the general thought process, how to iterate over different ideas and what I have learned from them. I am by no means a top competitor, but I want to share it anyway. And maybe some years from now, it will be funny to look back!</p>
 
-<p>First of all, people would say that these are competitions, how realistic or similar to real world modeling? It it true that there certainly will be some differences, but many industry products start out with prototypes and this might be similar to that. And second, some competition organizers genuinely have end product in mind and intent to make the competition more &quot;realistic&quot;. Of course this itself is a huge topic and I would go into detail here, but I strongly suggest <a href="http://www.thetalkingmachines.com/blog/2015/6/18/working-with-data-and-machine-learning-in-advertizing">this podcast episode</a> and <a href="https://sites.google.com/site/claudiaperlich/home">The speaker&#39;s website</a>. </p>
+<p>First of all, people would say that these are competitions, how realistic or similar to real world modeling? It it true that there certainly will be some differences, but many industry products start out with prototypes and this might be similar to that. And second, some competition organizers genuinely have end product in mind and intent to make the competition more “realistic”. Of course this itself is a huge topic and I would go into detail here, but I strongly suggest <a href="http://www.thetalkingmachines.com/blog/2015/6/18/working-with-data-and-machine-learning-in-advertizing">this podcast episode</a> and <a href="https://sites.google.com/site/claudiaperlich/home">The speaker’s website</a>. </p>
 
-<p>So you are looking at the description of one competition, it seems quite interesting, a classification or regression problem. You decided to download the data and have a look, and see what other people are discussing in the forum. You might have some ideas about possible ways to tackle this problem, or there are shared starter code to get you started. The value of experiences is when you see a problem, you can probably &quot;know&quot; what methods might work, what kinds of features might be important for prediction. This is the most excruciating or most exhilarating part. The frustration of after exploring the data 1000 ways, trying all the methods you ever know, and things still doesn&#39;t work. Or the joy of finding the important features and see a huge bump in your score. They are all valuable lessons. The wonderful people in Kaggle usually will share their solutions after the competition is over. And you will know why you didn&#39;t do well and improve next time in a similar situation. It is all good!</p>
+<p>So you are looking at the description of one competition, it seems quite interesting, a classification or regression problem. You decided to download the data and have a look, and see what other people are discussing in the forum. You might have some ideas about possible ways to tackle this problem, or there are shared starter code to get you started. The value of experiences is when you see a problem, you can probably “know” what methods might work, what kinds of features might be important for prediction. This is the most excruciating or most exhilarating part. The frustration of after exploring the data 1000 ways, trying all the methods you ever know, and things still doesn’t work. Or the joy of finding the important features and see a huge bump in your score. They are all valuable lessons. The wonderful people in Kaggle usually will share their solutions after the competition is over. And you will know why you didn’t do well and improve next time in a similar situation. It is all good!</p>
 
-<p>In terms of iteration of ideas, that&#39;s where good engineering practices and master of tools come in. Knowing your tools(R packages or scikit-learn functions) well means when you have an idea, you can quickly put it to test. And good structuring or your data processing code, cross validation etc means you can swipe in and out of modules/methods quickly. And everything will be smooth..But again, this will require a lot of practice and a good habit. Usually there are a bunch of engineers in each competition, and you can learn a lot from them.</p>
+<p>In terms of iteration of ideas, that’s where good engineering practices and master of tools come in. Knowing your tools(R packages or scikit-learn functions) well means when you have an idea, you can quickly put it to test. And good structuring or your data processing code, cross validation etc means you can swipe in and out of modules/methods quickly. And everything will be smooth..But again, this will require a lot of practice and a good habit. Usually there are a bunch of engineers in each competition, and you can learn a lot from them.</p>
 
 <p>Finally what I have learned from the competitions I participated? Getting Generalized linear model(GLM) to actions, working on text data, and doing various exploratory to get better features! And as classified by someone else, there are structured dominated problems and noise dominated problems(BCI with EEG data definitely is in this category). Knowing what to do(finding tiny signals or finding complicated structure) in each cases(avoid overfitting noise or use more complicated algorithm to capture the underlying functions) will be vital. </p>
 
-<p>At the moment I am still not very familiar with the strength and weakness of some common algorithms, don&#39;t know how to handle many types of data, don&#39;t know efficient way to tackle the problem if data gets too big, don&#39;t have good engineering practices. </p>
+<p>At the moment I am still not very familiar with the strength and weakness of some common algorithms, don’t know how to handle many types of data, don’t know efficient way to tackle the problem if data gets too big, don’t have good engineering practices. </p>
 
 <p>So, back to the modeling!</p>
+
 
         </div>
     </div>
@@ -113,26 +114,26 @@ Talk data to me.
         
         <div class="content">
             <p>I have been looking for jobs recently because I am about to graduate soon. 
-At the beginning of February, I have two interviews for the position of (junior) data scientist. Those are my first ever interviews. Although I didn&#39;t get offer from either of them, it was a great experience. I would like to share some of the experiences here, and some thoughts about the process. Since there were non-disclosure agreements, I will not give out detail but only the general ideas. Hopefully someone might find this useful for their own future preparation.</p>
+At the beginning of February, I have two interviews for the position of (junior) data scientist. Those are my first ever interviews. Although I didn’t get offer from either of them, it was a great experience. I would like to share some of the experiences here, and some thoughts about the process. Since there were non-disclosure agreements, I will not give out detail but only the general ideas. Hopefully someone might find this useful for their own future preparation.</p>
 
 <p>It all began in the Engineering and Science career fair here at UC Davis around mid-Jan(quite awhile back already!). There are many tech companies but not so many have opening for data scientist position. I handed out about a dozen resumes and talked to the representatives about what I have done and why I am competent for the job. Naturally, they are all very polite and just told me to go back and wait for notice. Workday.inc provided a short interview opportunities that afternoon, and finally I was invited to have an onsite interview. The second interview was from Engage3, a startup here in Davis, focus on retailing. They called me a few days after the career fair. </p>
 
 <h3 id="general-process">General process</h3>
 
 <ul>
-<li><p>Engage3</p>
-
-<ul>
-<li>Called me, scheduled an hour informal interview with one of the senior member of the data scientist team.</li>
-<li>Talked with him in a coffee house, about what they are doing, what visions they have about their product, and what kinds of skills they would expect from their candidates. I had quite a nice conversation. Two days later they invited me for another two hour in-depth interview.</li>
-<li>The two hour interview includes two components, one is technical with two of the team members, the other one is behavioral. More details later.</li>
-</ul></li>
-<li><p>Workday</p>
-
-<ul>
-<li>Mature company focus on enterprise software, especially in human management and financial management etc. Beautiful office in downtown SF. They are rapidly expanding their data science team, and they expect it will play an important role in their company’s decisions.</li>
-<li>During that short half hour on-campus interview, one of the senior member in the team interviewed me. It covered some basic statistical concepts, at the undergraduate level, and one SQL question, one data manipulation question. All quite standard. I didn&#39;t ace it but I think I did ok. HR sent out an email for onsite a few days later.</li>
-</ul></li>
+  <li>Engage3
+    <ul>
+      <li>Called me, scheduled an hour informal interview with one of the senior member of the data scientist team.</li>
+      <li>Talked with him in a coffee house, about what they are doing, what visions they have about their product, and what kinds of skills they would expect from their candidates. I had quite a nice conversation. Two days later they invited me for another two hour in-depth interview.</li>
+      <li>The two hour interview includes two components, one is technical with two of the team members, the other one is behavioral. More details later.</li>
+    </ul>
+  </li>
+  <li>Workday
+    <ul>
+      <li>Mature company focus on enterprise software, especially in human management and financial management etc. Beautiful office in downtown SF. They are rapidly expanding their data science team, and they expect it will play an important role in their company’s decisions.</li>
+      <li>During that short half hour on-campus interview, one of the senior member in the team interviewed me. It covered some basic statistical concepts, at the undergraduate level, and one SQL question, one data manipulation question. All quite standard. I didn’t ace it but I think I did ok. HR sent out an email for onsite a few days later.</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="components-of-the-main-interview">Components of the main interview</h3>
@@ -140,18 +141,17 @@ At the beginning of February, I have two interviews for the position of (junior)
 <p>The term data scientist is widely used only in recently years and the role is not very well defined. Every companies have their own expectations, some more research oriented, some more software engineering related, some more like consulting etc.</p>
 
 <h4 id="engage3">Engage3</h4>
-
-<p>They were very straightforward and had clear idea about what their candidate should be able to do. They expect you know your conditional probability well(do it like a bayesian!), they also expect that you have strong hands on skill. I was given a piece of Python script to debug, since now I mostly use R for day to day analysis, it took me a while to spot the bug. No the usual kind of algorithm questions for software engineer position and that is nice. Fundamentally I think it is important that data scientist know those concepts but in it&#39;s core, it is about analytics, the ability to explore data and yield insight from them. </p>
+<p>They were very straightforward and had clear idea about what their candidate should be able to do. They expect you know your conditional probability well(do it like a bayesian!), they also expect that you have strong hands on skill. I was given a piece of Python script to debug, since now I mostly use R for day to day analysis, it took me a while to spot the bug. No the usual kind of algorithm questions for software engineer position and that is nice. Fundamentally I think it is important that data scientist know those concepts but in it’s core, it is about analytics, the ability to explore data and yield insight from them. </p>
 
 <p>On the behavioral site, they focus more on your personality, whether you can endure hardship(you can imagine the importance of the trait for a startup company). In hindsight, I should be more well prepared for this interview. Review the stat/probability concepts, and brush up my Python skill since most people outside stat would be more comfortable with Python/Java. They told me they will make the final decision next week and I got the rejection right on time.</p>
 
 <h4 id="workday">Workday</h4>
+<p>Six round of interviews, the people there are all very talented. PhD from Physics/Stat/machine learning, experienced software engineers etc. First interview was about basic stat concepts again! <strong>Condition distribution</strong>, can’t stress that point more. Two of the them were coding style interviews. Need to write out the solution in a whiteboard, and yes, they would prefer you do it with Python/Java. The questions weren’t hard and I wrote out the solutions with Python with some hints. One of the interview was focused on machine learning algorithms, how they works, how to train them, their pros and cons. In conclusion, to do well in a data scientist interview, you need to know your ML toolbox well! And finally the head of the team talked with me for a moment, about what they are doing and their visions. </p>
 
-<p>Six round of interviews, the people there are all very talented. PhD from Physics/Stat/machine learning, experienced software engineers etc. First interview was about basic stat concepts again! <strong>Condition distribution</strong>, can&#39;t stress that point more. Two of the them were coding style interviews. Need to write out the solution in a whiteboard, and yes, they would prefer you do it with Python/Java. The questions weren&#39;t hard and I wrote out the solutions with Python with some hints. One of the interview was focused on machine learning algorithms, how they works, how to train them, their pros and cons. In conclusion, to do well in a data scientist interview, you need to know your ML toolbox well! And finally the head of the team talked with me for a moment, about what they are doing and their visions. </p>
+<p>After that I also briefly interviewed with Cablevision and some other companies as well but still don’t have any offer yet. More hands on experiences are needed! </p>
 
-<p>After that I also briefly interviewed with Cablevision and some other companies as well but still don&#39;t have any offer yet. More hands on experiences are needed! </p>
+<p>Next post I will talk about the Kaggle competition [BCI Challenge]{http://www.kaggle.com/c/inria-bci-challenge}. Which me and several my classmates joined and finally got 79 out of 270 teams.</p>
 
-<p>Next post I will talk about the Kaggle competition [BCI Challenge]{<a href="http://www.kaggle.com/c/inria-bci-challenge">http://www.kaggle.com/c/inria-bci-challenge</a>}. Which me and several my classmates joined and finally got 79 out of 270 teams.</p>
 
         </div>
     </div>
